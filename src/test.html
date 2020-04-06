@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: aquamarine; width: auto;">
+    <div style="margin:auto; margin-top: 200px; background-color:blueviolet; width: 100px;">
+        <button style="margin: auto; width: 100%;" onclick="onClickButton()">点我出奇迹</button>
+    </div>
+</body>
+<script>
+    function onClickButton() {
+        window.ReactNativeWebView.postMessage(JSON.stringify({code:200, msg:'成功', data:{}}))
+    }
+    function webFunc(title = '') {
+        alert(title)
+    }
+</script>
+
+</html>
